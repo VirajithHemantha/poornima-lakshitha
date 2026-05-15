@@ -569,7 +569,7 @@ export default function WeddingInvitation() {
                   initial={{ rotate: -45, opacity: 0 }}
                   animate={{ rotate: 0, opacity: 0.4 }}
                   transition={{ duration: 1.5, delay: 0.5, type: "spring" }}
-                  src={mandalaImage}
+                  src="/images/Logo 2.png"
                   className="w-24 h-24 md:w-32 md:h-32 object-contain mix-blend-multiply mb-6 drop-shadow-sm opacity-60"
                   alt=""
                 />
@@ -816,6 +816,15 @@ export default function WeddingInvitation() {
               <div className="absolute inset-0 opacity-[0.03] paper-grain pointer-events-none" />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px] aspect-square bg-theme-100 blur-[120px] rounded-full opacity-30 pointer-events-none" />
 
+              {/* Premium Section Background Image */}
+              <div className="absolute inset-0 z-0 pointer-events-none">
+                <InviteImage
+                  src="/WhatsApp Image 2026-05-16 at 02.04.58.jpeg"
+                  className="absolute inset-0 w-full h-full object-cover object-center opacity-10"
+                  alt=""
+                />
+              </div>
+
               <div className="w-full max-w-[1000px] px-4 flex flex-col items-center text-center relative z-10">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -931,7 +940,7 @@ export default function WeddingInvitation() {
                       whileInView={{ opacity: 1, x: 0, rotate: 3 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.2, duration: 0.8 }}
-                      className="absolute -right-4 -top-8 w-32 h-44 md:w-56 md:h-72 rounded-t-full border-4 md:border-8 border-white shadow-xl md:shadow-2xl z-0 overflow-hidden"
+                      className="absolute -right-4 -top-8 w-32 h-44 md:w-56 md:h-72 rounded-t-full border-4 md:border-8 border-white shadow-xl md:shadow-2xl z-20 overflow-hidden"
                     >
                       <InviteImage
                         src="/WhatsApp Image 2026-05-11 at 04.27.45.jpeg"
@@ -1178,7 +1187,7 @@ export default function WeddingInvitation() {
                         whileInView={{ opacity: 0.9, y: 0, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.9, ease: "easeOut" }}
-                        src={mandalaImage}
+                        src="/images/Logo 2.png"
                         alt=""
                         className="relative z-10 mt-8 w-40 h-40 md:w-56 md:h-56 object-contain mix-blend-multiply drop-shadow-[0_12px_24px_rgba(188,95,153,0.2)]"
                       />
